@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pusula Harita Reality Model</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-left">
+        <div class="logo-circle">P</div>
+        <div>
+          <div class="brand-title">Pusula Harita</div>
+          <div class="brand-subtitle">Reality Model Platformu</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">Hakkımızda</a>
+        <a href="#projects">Projeler</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Drone ile Üretilmiş <span>Reality Model</span> Projeleri</h1>
+          <p>
+            Yüksek çözünürlüklü drone çekimleri ve gelişmiş fotogrametri teknikleri ile
+            şehirler, kavşaklar ve mimari projeler için detaylı 3B reality modeller üretiyoruz.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Projeleri Gör</a>
+            <a href="#contact" class="btn btn-ghost">Teklif Al</a>
+          </div>
+          <div class="hero-tags">
+            <span>Drone Fotogrametri</span>
+            <span>Reality Model</span>
+            <span>3B Haritalama</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="radar-circle"></div>
+          <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Drone reality model görselleştirme" />
+          <div class="hero-badge">
+            <span>Gerçek Projeler</span>
+            <strong>Zafer Mimarlık, Bakü, Edirne...</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="section-header">
+          <h2>Müşteri Projeleri</h2>
+          <p>İş yaptığımız firmalara ait reality modelleri görüntülemek için bir kutucuk seçin.</p>
+        </div>
+
+        <div class="clients-grid" id="clientsGrid">
+          <!-- Kartlar app.js ile dolduruluyor -->
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="about-card">
+          <h2>Pusula Harita Hakkında</h2>
+          <p>
+            Pusula Harita, mühendislik ve haritacılık projelerinde drone ile veri toplama,
+            reality model üretimi ve 3B görselleştirme alanında uzmanlaşmış bir ekiptir.
+          </p>
+          <p>
+            Yol ve kavşak projeleri, kentsel dönüşüm sahaları, mimari projeler ve özel
+            altyapı yatırımları için ölçüye dayalı, yüksek doğruluklu 3B modeller üretiyoruz.
+          </p>
+          <a href="https://www.pusulamuhendislik.com/" target="_blank" rel="noreferrer" class="text-link">
+            Pusula Mühendislik altyapısını inceleyin
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div>
+        <h3>İletişim</h3>
+        <p>Projeleriniz için reality model ve drone çekim hizmeti almak isterseniz bizimle iletişime geçin.</p>
+        <p><strong>Adres:</strong> Karlıbayır Mahallesi Selçuklu Caddesi No:5 D:11, Arnavutköy / İstanbul</p>
+        <p><strong>Telefon:</strong> +90 212 597 97 00 &nbsp; | &nbsp; <strong>Cep:</strong> +90 533 490 29 85</p>
+        <p><strong>E-posta:</strong> <a href="mailto:tsivri@pusulamuhendislik.com">tsivri@pusulamuhendislik.com</a></p>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Pusula Harita. Tüm hakları saklıdır.</span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="modal-header">
+        <h2 id="modalTitle">Proje Reality Modelleri</h2>
+        <p id="modalSubtitle"></p>
+      </div>
+      <div class="modal-content" id="modalContent">
+        <!-- Reality modelleri burada listelenecek -->
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
+
