@@ -12,8 +12,10 @@ const clients = [
           "Drone ile çekilen fotoğraflardan üretilmiş yüksek detaylı 3B konut bloğu modeli.",
         thumbnail:
           "https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=800",
-        // Bu link, proje içindeki acute3d (3MX) viewer'ı Vite üzerinden açar
-        url: "/07_127_120251001_3MX_WEB/App/index.html",
+        // Bu link, GitHub Pages'te RealityModel projesi altından açılır:
+        // https://munhani.github.io/RealityModel/07_127_120251001_3MX_WEB/App/index.html
+        // Önemli: Başa "/" koymuyoruz ki repo kökü korunmuş olsun.
+        url: "07_127_120251001_3MX_WEB/App/index.html",
         status: "Yayında",
       },
     ],
