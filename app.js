@@ -21,6 +21,26 @@ const clients = [
     ],
   },
   {
+    id: "bakirci-yapi",
+    name: "Bakırcı Yapı",
+    tag: "Ticari Proje",
+    location: "İstoç / İstanbul",
+    models: [
+      {
+        id: "bakirci-istoc",
+        title: "İstoç Projesi Reality Modeli",
+        description:
+          "İstoç bölgesindeki ticari yapıların detaylı 3B reality model çalışması.",
+        thumbnail:
+          "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=800",
+        // GitHub Pages üzerinde:
+        // https://munhani.github.io/RealityModel/01_2144_4_20260124_3MX/App/index.html
+        url: "01_2144_4_20260124_3MX/App/index.html",
+        status: "Yayında",
+      },
+    ],
+  },
+  {
     id: "baku-havalimani",
     name: "Bakü Havalimanı Kavşağı",
     tag: "Yol & Kavşak",
