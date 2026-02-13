@@ -31,6 +31,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy acute3d reality model viewer into dist
+        run: cp -r 07_127_120251001_3MX_WEB dist/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
